@@ -1,0 +1,150 @@
+/* =========================
+   🔹 NAVBAR
+========================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  padding: 15px 30px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 0 0 12px 12px;
+  transition: background 0.3s ease;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cart-link {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.cart-link:hover {
+  transform: scale(1.1);
+}
+
+/* =========================
+   🔹 ICONS
+========================= */
+.cart-icon {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  transition: transform 0.2s, fill 0.3s, stroke 0.3s;
+}
+
+/* ❤️ Liked Heart */
+.cart-icon.liked {
+  fill: #ff4757;
+  stroke: #ff4757;
+}
+
+.cart-icon.liked:hover {
+  transform: scale(1.2);
+}
+
+/* 🛒 Cart badge */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: #ff4757;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+/* Active Cart Highlight */
+.cart-link.active svg {
+  color: #ffd700; /* yellow */
+  transform: scale(1.1);
+}
+
+/* =========================
+   🔹 FLOATING CART (MOBILE)
+========================= */
+.floating-cart {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  z-index: 1000;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+}
+
+.floating-cart:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.floating-cart .cart-icon {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.floating-cart .cart-badge {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 11px;
+  padding: 3px 6px;
+  background: #ff4757;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+/* Show floating cart only on small screens */
+@media (max-width: 768px) {
+  .floating-cart {
+    display: flex;
+  }
+  .navbar .cart-link {
+    display: none;
+  }
+}
+
+/* Hide floating cart on desktop */
+@media (min-width: 769px) {
+  .floating-cart {
+    display: none;
+  }
+}
+
+/* =========================
+   🔹 HOVER EFFECTS
+========================= */
+.cart-link:hover .cart-badge {
+  transform: scale(1.2);
+  background: #ff6b81;
+}
