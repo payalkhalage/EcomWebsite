@@ -1,6 +1,6 @@
-# 🛍️ VibeCart — Full Stack E-Commerce Cart App
+# 🛍️ EcomCart — Full Stack E-Commerce Cart App
 
-A full-stack mock e-commerce cart built as part of the **Vibe Commerce Full Stack Assignment**.
+A full-stack mock e-commerce cart built as part of the **E-Commerce Full Stack Assignment**.
 
 This project demonstrates product listing, cart management, wishlist functionality, checkout, API integration, and database persistence.
 
@@ -36,7 +36,7 @@ This project demonstrates product listing, cart management, wishlist functionali
 │   ├── server.js
 │   ├── routes/
 │   ├── models/
-│   └── controllers/
+│   └──config/
 │
 ├── frontend/
 │   ├── src/
@@ -106,7 +106,7 @@ npm start
 ![Cart](./frontend/public/screenshots/cart.png)
 
 ### ❤️ WishList Page
-![WishList](./frontend/public/sceenmshots/wishlist.png)
+![WishList](./frontend/public/sceenshots/wishlist.png)
 
 ### ✅ Checkout Success
 ![Checkout](./frontend/public/screenshots/checkout.png)
