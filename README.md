@@ -106,7 +106,7 @@ npm start
 ![Cart](./frontend/public/screenshots/cart.png)
 
 ### ❤️ WishList Page
-![WishList](./frontend/public/sceenshots/wishlist.png)
+![WishList](./frontend/public/screenshots/wishlist.png)
 
 ### ✅ Checkout Success
 ![Checkout](./frontend/public/screenshots/checkout.png)
